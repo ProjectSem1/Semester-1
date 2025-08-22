@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavbarBootstrap</title>
+    <link rel="stylesheet" href="./Bootstrapv5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/icon.png" 
+          alt="Lara Camp" 
+          class="d-inline-block align-text-top me-2">
+      </a>
+      
+      <!-- Toggle button untuk mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Menu items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link active" href="#">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mentor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+        </ul>
+        
+        <!-- Tombol Sign In & Sign Up -->
+      <!-- <div class="d-flex">
+      <a href="#" class="btn btn-outline-primary me-2 rounded-pill">Sign In</a>
+      <a href="#" class="btn btn-primary rounded-pill">Sign Up</a>
+      </div> -->
+        <div class="d-flex gap-2 align-items-center user-auth">
+          <span class="mb-0 fw-semi">hello,admin</span>
+          <img src="./images/photo.png" class="rounded-circel" alt="">
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <section class="learn-from-expert container">
+      <div class="row">
+        <div class="sisi-kiri col-12 col-md-6 col-lg-6">
+          <span>LEARN FROM EXPERTS</span>
+          <h1>Start Your <span class="dev">Developer <br> Journey </span> Today</h1>
+          <p>Our bootcamp is helping junior developers who are really passionate in the programming.</p>
+          <button class="btn">Sign up</button>
+        </div>
+        <div class="sisi-kanan col-12 col-md-6 col-lg-6">
+            <img src="./images/banner.png" alt="">
+        </div>
+        
+      </div>
+    </section>
+
+
+
+    <script src="./Bootstrapv5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

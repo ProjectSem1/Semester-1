@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Aziz</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Hero Section -->
+  <header class="gradient-bg text-white py-20 px-4 md:px-0">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Abdul Aziz</h1>
+        <p class="text-xl md:text-2xl mb-8">Pengembang Web Profesional</p>
+        <div class="flex space-x-4">
+          <a href="#kontak" class="bg-white text-indigo-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+            Hubungi Saya
+          </a>
+          <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition duration-300">
+            Lihat Proyek
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="relative">
+          <img src="../images/joseph.webp" alt="Foto Aziz" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-8 border-white shadow-2xl"/>      
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section class="py-20 px-4 md:px-0 bg-white">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tentang Saya</h2>
+        <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Saya adalah seorang pengembang web yang bersemangat membangun solusi digital yang berdampak. Berpengalaman di berbagai proyek dengan teknologi web modern.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Dengan lebih dari 3 tahun pengalaman di industri, saya telah membantu berbagai klien mencapai tujuan bisnis mereka melalui solusi web yang inovatif dan efektif.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">HTML/CSS</span>
+            <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">JavaScript</span>
+            <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">React</span>
+            <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <div class="bg-gray-100 p-8 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Keahlian Saya</h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Pengembangan Frontend</span>
+                  <span class="font-bold text-indigo-600">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">Desain UI/UX</span>
+                  <span class="font-bold text-indigo-600">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="font-medium">React Development</span>
+                  <span class="font-bold text-indigo-600">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                  <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Gallery -->
+  <section id="projects" class="py-20 px-4 md:px-0 bg-gray-50">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Galeri Proyek</h2>
+        <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <figure class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+          <img src="../images/project 1.jpg" alt="Proyek 1" class="w-full h-48 object-cover"/>
+          <figcaption class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Proyek Aplikasi Web</h3>
+            <p class="text-gray-600">Aplikasi manajemen proyek dengan fitur kolaborasi tim waktu nyata.</p>
+            <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:text-indigo-800">Lihat Detail →</a>
+          </figcaption>
+        </figure>
+        <figure class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+          <img src="../images/project 2.jpg" alt="Proyek 2" class="w-full h-48 object-cover"/>
+          <figcaption class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Desain Landing Page</h3>
+            <p class="text-gray-600">Landing page untuk produk SaaS dengan konversi tinggi.</p>
+            <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:text-indigo-800">Lihat Detail →</a>
+          </figcaption>
+        </figure>
+        <figure class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+          <img src="../images/project 3.jpg" alt="Proyek 3" class="w-full h-48 object-cover"/>
+          <figcaption class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Portal Berita Sekolah</h3>
+            <p class="text-gray-600">Platform berita dan informasi untuk komunitas sekolah.</p>
+            <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:text-indigo-800">Lihat Detail →</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-20 px-4 md:px-0 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kontak Saya</h2>
+        <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+      <form action="#" method="post" class="bg-gray-50 p-8 rounded-xl shadow-lg">
+        <div class="mb-6">
+          <label for="nama" class="block text-gray-700 font-medium mb-2">Nama:</label>
+          <input type="text" id="nama" name="nama" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email:</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+        </div>
+        <div class="mb-6">
+          <label for="pesan" class="block text-gray-700 font-medium mb-2">Pesan:</label>
+          <textarea id="pesan" name="pesan" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300">
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- List Kontak -->
+  <section id="kontak" class="py-20 px-4 md:px-0 bg-gray-50">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">List Kontak</h2>
+        <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+      </div>
+      <div class="overflow-x-auto bg-white rounded-xl shadow-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pesan</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Febryan</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">jiss@gmail.com</td>
+              <td class="px-6 py-4 text-sm text-gray-500">Helo, Materi HTML nya oke sih!</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Febryan</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">jiis@gmail.com</td>
+              <td class="px-6 py-4 text-sm text-gray-500">Helo, Materi HTML nya oke sih!</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Febryan</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">jiis@gmail.com</td>
+              <td class="px-6 py-4 text-sm text-gray-500">Helo, Materi HTML nya oke sih!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12 px-4">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-2xl font-bold mb-4">Abdul Aziz</h3>
+          <p class="text-gray-400">Pengembang Web Profesional</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Abdul Aziz. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+  <!-- Contact Form -->
+  <section>
+    <h2>Kontak Saya</h2>
+    <form action="#" method="post">
+      <label for="nama">Nama:</label><br />
+      <input type="text" id="nama" name="nama" required><br /><br />
+
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required><br /><br />
+
+
+      <label for="pesan">Pesan:</label><br />
+      <textarea id="pesan" name="pesan" rows="5" required></textarea><br /><br />
+
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+
+  <!-- List Kontak -->
+  <section id="kontak">
+    <h2>List Kontak</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Pesan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Febryan</td>
+          <td>jiss@gmail.com</td>
+          <td>Helo, Materi HTML nya oke sih!</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Febryan</td>
+          <td>jiis@gmail.com</td>
+          <td>Helo, Materi HTML nya oke sih!</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Febryan</td>
+          <td>jiis@gmail.com</td>
+          <td>Helo, Materi HTML nya oke sih!</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
