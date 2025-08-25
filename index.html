@@ -6,26 +6,11 @@
   <title>Semester 1 - Web Projects</title>
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .menu-btn {
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-    .menu-btn:hover {
-      transform: scale(1.05);
-    }
-    .collapse .list-group a {
-      transition: background 0.3s ease;
-    }
-    .collapse .list-group a:hover {
-      background-color: #f0f0f0;
-    }
-  </style>
 </head>
 <body class="bg-light">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Semester 1</a>
     </div>
@@ -34,47 +19,48 @@
   <!-- Main content -->
   <div class="container py-5">
     <h1 class="fw-bold text-center mb-4">Selamat Datang di Project Semester 1</h1>
-    <p class="text-center mb-5">Pilih salah satu project untuk dibuka:</p>
+    <p class="text-center mb-5 text-muted">Pilih salah satu project untuk dibuka:</p>
 
     <!-- Vertical Menu -->
     <div class="col-md-6 mx-auto">
-      
-     <!-- Basic -->
-      <div class="mb-3">
-        <button class="btn btn-primary w-100 py-3 menu-btn shadow-sm" data-bs-toggle="collapse" data-bs-target="#basicMenu">
-          Basic
+
+      <!-- Basic -->
+      <div class="card shadow-sm mb-3">
+        <button class="btn btn-primary w-100 py-3 fw-semibold d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse" data-bs-target="#basicMenu">
+          Basic <span class="ms-2">▼</span>
         </button>
-        <div id="basicMenu" class="collapse mt-2">
-          <div class="list-group shadow-sm rounded">
-            <a href="./html_css/index.html" class="list-group-item list-group-item-action">📚 Web portofolio</a>
+        <div id="basicMenu" class="collapse">
+          <div class="list-group list-group-flush">
+            <a href="./html_css/index.html" class="list-group-item list-group-item-action">📚 Web Portofolio</a>
           </div>
-        </div> 
+        </div>
       </div>
 
-      
-
       <!-- Tailwind -->
-      <div class="mb-3">
-        <button class="btn btn-success w-100 py-3 menu-btn shadow-sm" data-bs-toggle="collapse" data-bs-target="#tailwindMenu">
-          Tailwind
+      <div class="card shadow-sm mb-3">
+        <button class="btn btn-success w-100 py-3 fw-semibold d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse" data-bs-target="#tailwindMenu">
+          Tailwind <span class="ms-2">▼</span>
         </button>
-        <div id="tailwindMenu" class="collapse mt-2">
-          <div class="list-group shadow-sm rounded">
+        <div id="tailwindMenu" class="collapse">
+          <div class="list-group list-group-flush">
             <a href="./tailwind/rocket_web/index.html" class="list-group-item list-group-item-action">🚀 Acme Rocket Web</a>
           </div>
         </div>
       </div>
 
       <!-- Bootstrap -->
-      <div class="mb-3">
-        <button class="btn btn-warning w-100 py-3 menu-btn shadow-sm" data-bs-toggle="collapse" data-bs-target="#bootstrapMenu">
-          Bootstrap
+      <div class="card shadow-sm mb-3">
+        <button class="btn btn-warning w-100 py-3 fw-semibold d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse" data-bs-target="#bootstrapMenu">
+          Bootstrap <span class="ms-2">▼</span>
         </button>
-        <div id="bootstrapMenu" class="collapse mt-2">
-          <div class="list-group shadow-sm rounded">
-            <a href="./bootstrap/form-validasion/index.html" class="list-group-item list-group-item-action">📦 Form Validasion</a>
-            <a href="./bootstrap/galery-rocket/index.html" class="list-group-item list-group-item-action">🖼️ Galery Rocket</a>
-            <a href="./bootstrap/mini_card/index.html" class="list-group-item list-group-item-action">📚 Mini card</a>
+        <div id="bootstrapMenu" class="collapse">
+          <div class="list-group list-group-flush">
+            <a href="./bootstrap/form-validasion/index.html" class="list-group-item list-group-item-action">📦 Form Validation</a>
+            <a href="./bootstrap/galery-rocket/index.html" class="list-group-item list-group-item-action">🖼️ Gallery Rocket</a>
+            <a href="./bootstrap/mini_card/index.html" class="list-group-item list-group-item-action">📚 Mini Card</a>
           </div>
         </div>
       </div>
